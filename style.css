@@ -1,0 +1,186 @@
+body
+{
+    
+    margin:auto;
+    word-wrap: break-word;
+      font-family:"Open Sans",sans-serif;
+        background-color:#ec7334;
+      background-image:
+    linear-gradient(
+      to bottom, 
+      #ea8300, 
+      #f6b500
+    );
+}
+h1
+{
+    font-family:"Open Sans",sans-serif;
+    text-align: center;
+    text-transform:uppercase;
+    margin-top:0;
+    line-height:2.3em;
+    font-weight:800;
+}
+.main_container
+{
+	max-width: 600px;
+	margin:auto;
+	display: block;
+
+  
+    border-radius:5px;
+    padding:10px;
+    padding-top:1%;
+    
+}
+.main_container img
+{
+	margin:auto;
+	max-width:180px;
+	display: block;
+	float:left;
+}
+label
+{
+    min-width:180px;
+    display: inline-block;
+    margin-bottom:10px;
+}
+.err
+{
+	font-size:80%;
+	color:red;
+	font-style:italic;
+	margin-top:0;
+}
+input,select
+{
+    width:100%;
+    height:30px;
+    margin-bottom:20px;
+    border-radius:5px;
+    border:transparent;
+    background-color:#fff;
+}
+p.err + input
+{
+	margin-bottom:0;
+	
+}
+.form_container
+{
+	margin-top:50px;
+}
+.mainfields_container, .voucherfield_container
+{
+	/*border:1px solid #fefefe;*/
+	/*padding:10px;*/
+	margin-bottom:20px;
+	/*background:#ffbe34;*/
+}
+.mainfields_container
+{
+	margin-bottom:0;	
+}
+.ajax-loader
+{
+	display: none;
+	position: fixed;
+    top: 30%;
+    left: 48.5%;
+    background: #efefef;
+    padding: 20px;
+    border-radius: 5px;
+	}
+button
+{
+	height:30px;
+	width: 100%;
+	display: block;
+	border-radius:5px;
+	background:#000;
+	text-transform: uppercase;
+	color:#fff;
+	border:transparent;
+	font-size:105%;
+	height:35px;
+}
+
+/* Snackbar styling */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  /*max-width: 250px; /* Set a default minimum width */
+  height: auto;
+  overflow-y: scroll;
+  /*margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+ 
+  z-index: 1; /* Add a z-index if needed */
+   position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+ /* -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;*/
+ /* animation: fadein 0.5s, fadeout 0.5s 2.5s;*/
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from { opacity: 0;} 
+  to { opacity: 1;}
+}
+
+@keyframes fadein {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {  opacity: 1;} 
+  to { opacity: 0;}
+}
+
+@keyframes fadeout {
+  from { opacity: 1;}
+  to { opacity: 0;}
+}
+@media all and (max-width:800px)
+{
+	h1
+	{
+		    line-height: 3.5em;
+    font-size: 1.7em;
+    border-bottom: 1px solid #fff;
+	}	
+	.main_container img
+	{
+		border-right:1px solid #fff;
+		margin: auto;
+        display: block;
+		float: left;
+		max-height: 88px;
+		padding-bottom: 8px;
+		
+	}
+	input,select
+	{
+		font-size:16px;
+	}
+}
